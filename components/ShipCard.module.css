@@ -3,10 +3,14 @@
   width: 325px;
   height: 450px;
   margin-bottom: 20px;
-  background: url('../public/warship-b.webp');
+  background: url('../public/back.jpeg'); 
+  background-size: contain;
+  background-position-y: -78px;
+
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  
 }
 
 .wrapper {

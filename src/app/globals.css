@@ -9,5 +9,6 @@ body {
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,68,1) 38%, rgba(0,212,255,1) 93%);
+  background-color: rgb(21, 42, 99);
+  background-image: url('../../public/mk_background.jpg');
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './UI.module.css'
 
 interface FiltersProps {
   filterLevel: string;
@@ -14,9 +15,9 @@ const Filters: React.FC<FiltersProps> = ({
   onFilterChange,
 }) => {
   return (
-    <div>
+    <div className={styles.filter}>
       <div>
-        <select value={filterLevel} onChange={(e) => onFilterChange('level', e.target.value)}>
+        <select className={styles.select} value={filterLevel} onChange={(e) => onFilterChange('level', e.target.value)}>
           <option value="">All Levels</option>
           <option value="1">Level 1</option>
           <option value="2">Level 2</option>
@@ -32,31 +33,31 @@ const Filters: React.FC<FiltersProps> = ({
         </select>
       </div>
       <div>
-        <select value={filterNation} onChange={(e) => onFilterChange('nation', e.target.value)}>
+        <select className={styles.select} value={filterNation} onChange={(e) => onFilterChange('nation', e.target.value)}>
           <option value="">All Nations</option>
-          <option value="japan">japan</option>
-          <option value="usa">usa</option>
-          <option value="ussr">ussr</option>
-          <option value="germany">germany</option>
-          <option value="uk">uk</option>
-          <option value="france">france</option>
-          <option value="pan_asia">pan_asia</option>
-          <option value="italy">italy</option>
-          <option value="commonwealth">commonwealth</option>
-          <option value="pan_america">pan_america</option>
-          <option value="europe">europe</option>
-          <option value="netherlands">netherlands</option>
-          <option value="spain">spain</option>
+          <option value="japan">Japan</option>
+          <option value="usa">USA</option>
+          <option value="ussr">USSR</option>
+          <option value="germany">Germany</option>
+          <option value="uk">UK</option>
+          <option value="france">France</option>
+          <option value="pan_asia">Pan Asia</option>
+          <option value="italy">Italy</option>
+          <option value="commonwealth">Commonwealth</option>
+          <option value="pan_america">Pan America</option>
+          <option value="europe">Europe</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="spain">Spain</option>
         </select>
       </div>
       <div>
-        <select value={filterType} onChange={(e) => onFilterChange('type', e.target.value)}>
+        <select className={styles.select} value={filterType} onChange={(e) => onFilterChange('type', e.target.value)}>
           <option value="">All Types</option>
-          <option value="submarine">submarine</option>
-          <option value="destroyer">destroyer</option>
-          <option value="cruiser">cruiser</option>
-          <option value="battleship">battleship</option>
-          <option value="aircarrier">aircarrier</option>
+          <option value="submarine">Submarine</option>
+          <option value="destroyer">Destroyer</option>
+          <option value="cruiser">Cruiser</option>
+          <option value="battleship">Battleship</option>
+          <option value="aircarrier">Air Carrier</option>
         </select>
       </div>
     </div>
